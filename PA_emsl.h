@@ -1,6 +1,16 @@
-//PA_EMSL.C : Programmer's Arsenal Easy Maxmod Sound Library.
-//Code fully written by AerGlass, with reference of
-//https://github.com/qgerman2/streaming_example
+/*
+PA_EMSL.cpp : Programmer's Arsenal Easy Maxmod Sound Library.
+Code fully written by AerGlass, with reference of
+https://github.com/qgerman2/streaming_example
+
+Thanks to:
+
+DesCube
+devkitPro
+PAlib developers.
+
+*/
+
 #ifndef PA_EMSL_INCLUDED
 #define PA_EMSL_INCLUDED
 
@@ -17,8 +27,8 @@ typedef struct{
 }ESML_TStreamInfo;
 void EMSL_UpdateStream();
 void EMSL_CloseStream();
-void ESML_PlayWav(const char* filename);
-void ESML_InitDefault();
+void EMSL_PlayWav(const char* filename);
+void EMSL_InitDefault();
 
-extern ESML_TStreamInfo ESML_StreamInfo;
+extern ESML_TStreamInfo EMSL_StreamInfo;
 #endif
